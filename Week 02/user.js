@@ -10,7 +10,7 @@ function showSum() {
 // Subtraction
 function showSubtraction() {
   let chris = 10;
-  let dhamala = 4;
+  let dhamala = 4; 
   const difference = chris - dhamala;
   const result = document.getElementById("subResult");
   result.textContent = `The difference of ${chris} - ${dhamala} is ${difference}.`;

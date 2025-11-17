@@ -1,0 +1,115 @@
+body {
+    background: linear-gradient(135deg, #000000, #1a2a6c); /* Option B */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    margin: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #66a6ff;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+/* PAGE TITLE */
+.title {
+    margin-top: 80px; /* push below fixed navbar */
+    color: #f5f5f5;
+}
+
+/* RESPONSIVE MENU */
+@media (max-width: 700px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #111;
+        width: 100%;
+        padding: 15px 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-links.open {
+        display: flex; /* shown when hamburger is clicked */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* IMAGE */
+#photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+    transition: 0.3s;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.6);
+    margin-top: 20px;
+}
+
+/* BUTTON */
+#animateBtn {
+    padding: 12px 25px;
+    border: none;
+    background: #ffffff;
+    color: #000;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#animateBtn:hover {
+    background: #dddddd;
+}
